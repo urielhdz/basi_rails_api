@@ -5,13 +5,6 @@ gem 'rails', '4.2.3'
 
 gem 'rails-api'
 
-gem 'spring', :group => :development
-
-
-gem 'sqlite3'
-gem "annotate"
-
-
 # To use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
@@ -19,10 +12,13 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jbuilder'
 
 group :production do
+	gem "pg"
 end
 
 group :development, :test do
-
+	gem 'sqlite3'
+	gem 'spring'
+	gem "annotate"
   #Testing Gems
   gem 'shoulda-matchers'
   gem 'rspec-rails'
