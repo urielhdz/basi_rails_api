@@ -90,5 +90,28 @@ No retorna nada si se completó la eliminación
 
 ## Usuarios
 
+
 ### POST /users
-Crea un nuevo usuario
+Crea un nuevo usuario con los parámetros enviados. Ejemplo de petición:
+
+```
+POST /users
+{ user: {
+			username: "uriel", 
+			password: "12345678", 
+			nombre: "Uriel"
+			password_confirmation: "12345678",
+			direccion: "Av siempre viva"
+		}
+}
+```
+Responde con el usuario creado:
+```
+{ 
+  user:{
+	username: "uriel",
+	nombre: "Uriel",
+	direccion: "Av siempre viva"
+  }
+}
+```
