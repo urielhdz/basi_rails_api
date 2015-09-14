@@ -165,7 +165,7 @@ Se responde con detalles de la compra
       id: 1,
       username: "uriel",
       direccion: "Av Siempre Viva",
-      nombre: "Uriel",
+      nombre: "Uriel"
     }
   }
 }
